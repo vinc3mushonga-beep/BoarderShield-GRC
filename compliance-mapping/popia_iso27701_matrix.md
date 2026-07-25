@@ -30,7 +30,7 @@ Under POPIA Section 26, biometric data is classified as **Special Personal Infor
 2. **Cryptographic Mathematical Representation:** The system instantly converts the image into a unique 256-character mathematical hash.
 3. **Instant Erasure:** The raw visual asset is permanently cleared from the local machine before network transmission. Only the non-reversible hash is queried against the backend Sovereign Data Centre.
 
-### Incident Response & Breach Notification (POPIA Sec 22)
+### Incident Response & Breach Notification (POPIA Sec 22).
 In the event of a suspected security compromise, the architecture leverages **Amazon CloudWatch** integrated with **AWS Lambda** to automate the incident response path. If an unauthorized attempt to access the edge network is detected:
 * System logs are securely forwarded to a write-once-read-many (WORM) storage archive.
 * Automated workflows initiate a security notification template formatted to comply with the Host-Country Information Regulator's mandatory notification timelines.
